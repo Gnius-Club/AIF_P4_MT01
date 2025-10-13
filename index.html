@@ -55,7 +55,7 @@
             <button id="toggle-dialogues">Mostrar todos los diálogos</button>
 
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 5 - ¡Cutebot en Movimiento!</h2>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 5 - ¡Conociendo a Cutebot!</h2>
                 <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
                 <div class="overview-table-container">
                     <table>
@@ -70,35 +70,42 @@
                                 <td>
                                     <strong>Objetivos de Aprendizaje:</strong>
                                     <ul>
-                                        <li>Que los estudiantes identifiquen las partes principales de un robot Cutebot.</li>
-                                        <li>Que los estudiantes programen un movimiento básico (avanzar) en el Cutebot usando MakeCode.</li>
+                                        <li>Identificar las partes principales del robot Cutebot y comprender su función.</li>
+                                        <li>Programar los movimientos básicos del Cutebot, como avanzar y detenerse, utilizando bloques de código.</li>
+                                        <li>Introducirse al concepto de cómo la Inteligencia Artificial se relaciona con la robótica.</li>
+                                    </ul>
+                                    <strong>Objetivo General de la Sesión:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes se familiaricen con el hardware del robot Cutebot, aprendan a programar sus primeras acciones de movimiento y comiencen a entender la conexión entre los robots físicos y la Inteligencia Artificial.</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                      <ul>
-                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
-                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
-                                        <li>⚡ Actividad 3: AI GYM</li>
-                                        <li>⚡ Actividad 4: Brain Spark</li>
-                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos (3 min)</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación (7 min)</li>
+                                        <li>⚡ Actividad 3: AI GYM (10 min)</li>
+                                        <li>⚡ Actividad 4: Brain Spark (20 min)</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share) (5 min)</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un programa en MakeCode que hace que el robot Cutebot avance durante 1 segundo al iniciar.</li>
+                                        <li>Un programa en MakeCode que hace que el robot Cutebot avance y se detenga, basado en el plan (GCS) generado con la IA.</li>
+                                        <li>Participación en la discusión sobre aplicaciones de la robótica móvil.</li>
                                     </ul>
                                 </td>
                                 <td>
                                     <strong>Materiales Específicos:</strong>
                                     <ul>
-                                        <li>Proyector</li>
+                                        <li>Proyector o pantalla interactiva.</li>
                                         <li>Computadoras con acceso a MakeCode</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
                                         <li>Kits de Robot Cutebot (1 por pareja) con Micro:bits y baterías</li>
-                                        <li>Pizarra y marcadores</li>
+                                        <li>Pizarra y marcadores (Opcional).</li>
                                     </ul>
                                     <strong>Preparación Previa:</strong>
                                     <ol>
                                         <li>Asegurar que los kits de Cutebot estén completos y las baterías cargadas.</li>
                                         <li>Verificar el acceso a MakeCode y que la extensión para Cutebot esté identificada.</li>
-                                        <li>Tener un Cutebot de ejemplo ya ensamblado para la demostración.</li>
+                                        <li>Tener un Cutebot de ejemplo ya ensamblado con un movimiento simple cargado para la demostración.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -108,19 +115,19 @@
             </div>
 
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 5 minutos</h2>
-                <p>Generar expectación y presentar el reto del día: dar vida a un robot físico.</p>
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Genera expectación y prepara el ambiente, introduciendo el robot físico.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: El Gancho Inicial</h3>
-                            <p>Presenta un robot Cutebot ensamblado y pregunta a la clase qué creen que se necesita para que se mueva.</p>
+                            <h3>Paso 1: El Gancho Inicial y Activación de Xolo ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Genera expectación al presentar el robot físico e instruye claramente a los alumnos para activar a Xolo con sus gustos/intereses.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <h4>Diapositiva 2: ¡Hola, Inventores de Robots!</h4>
-                                <p class="dialogue assistant">"¡Hola, inventores! Hasta ahora hemos hecho magia en la pantalla, pero hoy... ¡vamos a darle vida a un robot de verdad! (Muestra el Cutebot). ¿Qué creen que necesita para moverse? ¡Exacto, un cerebro y un plan! Y eso es lo que le daremos hoy."</p>
+                                <p class="dialogue assistant">"¡Hola, inventores! Hasta ahora hemos hecho magia en la pantalla, pero hoy... ¡vamos a darle vida a un robot de verdad! (Muestra el Cutebot). Hoy vamos a conocer una herramienta increíble que nos abrirá las puertas a un mundo de robots que se mueven. ¡Prepárense para conocer al Cutebot!"</p>
+                                <p class="dialogue assistant">"Antes de empezar, vamos a activar a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses."</p>
                             </div>
                         </div>
                     </div>
@@ -128,46 +135,32 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 10 minutos</h2>
-                <p>Familiarizar a los estudiantes con las partes del robot y el rol del Micro:bit como su cerebro.</p>
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Familiariza a los estudiantes con las partes del robot y el rol del Micro:bit como su cerebro, presentando el objetivo.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Conociendo sus Partes</h3>
-                            <p>Explica las partes principales del robot, usando la analogía del cuerpo y el cerebro.</p>
-                            <p><b>Nota para el docente:</b> Es importante referirse al robot consistentemente como 'Cutebot' para evitar confusiones.</p>
+                            <h3>Paso 1: Conociendo el Hardware del Cutebot ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). Presenta físicamente el Cutebot, señalando y nombrando los componentes principales (ruedas, motores, Micro:bit como "cerebro", LEDs, sensores). Refuerza el nombre 'Cutebot'.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <h4>Diapositiva 3: Nuestro Nuevo Compañero</h4>
-                                <p class="dialogue assistant">"Este es el Cutebot. Fíjense bien en sus partes... aquí están sus ruedas y motores, que son como sus 'piernas' para moverse; aquí va el Micro:bit, que es su 'cerebro'..."</p>
+                                <p class="dialogue assistant">"Este es el Cutebot, nuestro nuevo compañero robótico. Fíjense bien en sus partes... aquí están sus ruedas y motores; aquí va el Micro:bit, que es su 'cerebro'; fíjense en sus 'ojos' (sensor ultrasónico) y los sensores de línea."</p>
+                                <p class="dialogue assistant">"El Micro:bit es el cerebro. Sin él, es solo plástico y cables. ¡Hoy le daremos su primera orden!"</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: El Cerebro del Robot</h3>
-                            <p>Refuerza la idea de que el Micro:bit contiene las instrucciones y controla el cuerpo del robot.</p>
+                            <h3>Paso 2: Demostración y "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). Muestra una breve demostración de un movimiento simple del Cutebot (avanzar y detenerse). Presenta formalmente el objetivo de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <h4>Diapositiva 4: El Cerebro del Robot</h4>
-                                <p class="dialogue assistant">"El Micro:bit es el cerebro del Cutebot. Sin él, es solo plástico y cables. Nosotros programamos el cerebro para que le dé órdenes al cuerpo. Le diremos a las 'piernas' que se muevan."</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Nuestro Primer Plan de Movimiento</h3>
-                            <p>Dibuja en la pizarra el plan simple para el primer programa: avanzar al iniciar.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <h4>Diapositiva 5: Nuestro Primer Plan de Movimiento</h4>
-                                <p class="dialogue assistant">"Nuestro plan es simple: AL INICIAR, le diremos al Cutebot que se mueva hacia adelante por 1 segundo. ¡Vamos a dibujarlo en la pizarra!"</p>
+                                <p class="dialogue assistant">"(Muestra la demostración breve). Ya vieron que puede moverse. Hoy vamos a explorar para qué sirven robots como este en el mundo real, y cómo programar su primer movimiento."</p>
+                                <p class="dialogue assistant">"Al final de esta clase, podrán decir con confianza: '<strong>Yo puedo imaginar cómo un robot como el Cutebot podría ayudar en una tarea y hacer que se mueva un poquito con tu plan (GCS).</strong>'"</p>
                             </div>
                         </div>
                     </div>
@@ -175,19 +168,34 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 5 minutos</h2>
-                <p>Simular el comportamiento del robot para reforzar la secuencia de instrucciones.</p>
+                <h2>⚡ Actividad 3: AI GYM ⏰ 10 minutos</h2>
+                <p>Trabajo con el chatbot de I.A. para explorar aplicaciones de la robótica móvil, conocer los comandos de movimiento básicos y la conexión con la IA.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Ensayo General</h3>
-                            <p>Un alumno actúa como el robot, siguiendo la instrucción de "avanzar por 1 segundo" cuando el profesor da la señal de "iniciar".</p>
+                            <h3>Paso 1: Instrucción Inicial y Prompt ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da la instrucción precisa a los alumnos para pedir la información a Xolo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <h4>Diapositiva 6: Ensayo General: ¡Yo Soy el Robot!</h4>
-                                <p class="dialogue assistant">"¡Vamos a actuar nuestro plan! Un voluntario será el Cutebot. Cuando yo diga 'iniciar', caminará hacia adelante mientras yo cuento 'un segundo' en voz alta. ¿Listos? ¡INICIAR!"</p>
+                                <p class="dialogue assistant">"¡Genios, es momento de entrar al A.I. GYM! 🧠💪 Xolo nos va a ayudar a entender las partes del Cutebot, sus primeros comandos y por qué los robots necesitan ser 'inteligentes'."</p>
+                                <p class="dialogue assistant">"Escriban en el chat: <strong>'Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes qué es el robot Cutebot, sus partes, los comandos para avanzar y detener, y la relación entre robots e IA.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción Guiada (Aplicaciones y Comandos) ⏰ 9 minutos</h3>
+                            <p>(Proyectar Diapositivas 6 y 7). Monitorea mientras Xolo discute aplicaciones de la robótica móvil (industria, exploración, salud) y explica que la IA es lo que permite a los robots "ver" y tomar decisiones.</p>
+                            <p>Refuerza la idea de que la IA ayuda a los robots a tomar decisiones (ej. no chocar).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está explicando dónde se usan robots como este: ¡en fábricas, para explorar Marte o para hacer entregas! También les está enseñando los comandos para que avance (<code>cutebot_avanzar</code>) y se detenga (<code>cutebot_detener</code>).</p>
+                                <p class="dialogue assistant">Asegúrense de responder a Xolo cuando pregunte: <strong>"Si tuvieran un Cutebot súper poderoso, ¿en qué tarea les gustaría que les ayudara en la escuela o en casa?"</strong></p>
+                                <p class="dialogue assistant">Recuerden que la IA es el 'secreto' que hace que estos robots puedan 'ver' su entorno, como nuestro Cutebot con su lente especial.</p>
                             </div>
                         </div>
                     </div>
@@ -196,30 +204,54 @@
 
             <div class="activity-card" id="activity-4">
                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
-                <p>Guiar a los estudiantes para que construyan el programa en MakeCode y lo transfieran al robot.</p>
+                <p>Ideación de una tarea simple, traducción a tu plan (GCS) con el chatbot, implementación y prueba del primer movimiento.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Añadir la Extensión y Construir el Código</h3>
-                            <p>Guía a los estudiantes para añadir la extensión de Cutebot en MakeCode y arrastrar los bloques necesarios.</p>
+                            <h3>Paso 1: Ideación de la Misión (La "idea") ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 8). Anima a los alumnos a idear un rol simple para su Cutebot. Guíalos a que la acción se simplifique a un movimiento de avanzar y detenerse.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <h4>Diapositiva 7: De la Pizarra al Código</h4>
-                                <p class="dialogue assistant">"¡Ahora al código! En MakeCode, vamos a 'Extensiones' y buscamos 'Cutebot'. Una vez añadida, aparecerá una nueva paleta de bloques. Usaremos el bloque 'avanzar a velocidad' y lo pondremos dentro de 'al iniciar'. Luego, añadiremos una pausa de 1 segundo y un bloque para detenerlo."</p>
+                                <p class="dialogue assistant">¡Es hora de diseñar la primera misión para su Cutebot! Basado en lo que vieron, ¿qué quieren que simule ser? ¿Un robot de exploración que busca algo? ¿Un robot de reparto? Pídanle ayuda a Xolo: <strong>'Basado en que quiero que mi Cutebot sea un [robot de exploración], ayúdame a crear un plan de movimiento simple (avanzar y detener).'</strong></p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: ¡A Rodar!</h3>
-                            <p>Guía el proceso de descargar el código al Micro:bit, insertarlo en el Cutebot y probarlo en el suelo.</p>
+                            <h3>Paso 2: Planificación con IA (GCS Básico) ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Guía a los alumnos sobre cómo usar Xolo para generar 'tu plan' (GCS). Refuerza la necesidad de la secuencia: avanzar, esperar, detener.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"¡Listos para la acción! Descarguen el código al Micro:bit. Con cuidado, colóquenlo en su Cutebot, enciéndanlo y... ¡pónganlo en el suelo para ver cómo obedece su programa!"</p>
+                                <p class="dialogue assistant">Xolo les dará 'tu plan' para lograr ese primer movimiento simple. ¡Fíjense bien en el plan! Debe contener el bloque de avanzar, un tiempo de espera (para que se mueva) y el bloque de detener. Su plan se verá parecido a esto:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    // El Cutebot se prepara
+    
+POR SIEMPRE: 
+    // 1. El Cutebot avanza
+    cutebot_avanzar(40) // Velocidad
+    ESPERAR 3 segundos
+    
+    // 2. El Cutebot se detiene
+    cutebot_detener()
+    ESPERAR 2 segundos // Pausa antes de repetir
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Prueba del Movimiento ⏰ 10 minutos</h3>
+                            <p>Da tiempo a los alumnos para que traduzcan el GCS a bloques en MakeCode, lo descarguen al Micro:bit, ensamblen y prueben el primer movimiento en el Cutebot.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Manos a la obra, ingenieros! Tomen 'tu plan' de Xolo y constrúyanlo en MakeCode. Conecten el Cutebot, descarguen el programa. Pónganlo en el suelo para ver cómo obedece su primer comando. Si tienen un problema (ej. no avanza), revisen los pasos de 'tu plan' y pidan ayuda a Xolo si es necesario.</p>
                             </div>
                         </div>
                     </div>
@@ -228,18 +260,18 @@
 
             <div class="activity-card" id="activity-5">
                 <h2>⚡ Actividad 5: Gnius STORM (Think-Pair-Share) ⏰ 5 minutos</h2>
-                <p>Reflexionar sobre el logro y conectar con futuras posibilidades.</p>
+                <p>Los alumnos muestran sus primeros movimientos y reflexionan sobre la conexión entre su "gran idea" y la acción básica lograda.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Celebración y Reflexión</h3>
-                            <p>Felicita a los estudiantes y haz preguntas sobre lo que aprendieron y qué más podrían hacer.</p>
+                            <h3>Paso 1: Celebración y Reflexión (Think & Share) ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Felicita a los estudiantes. Pide a algunas parejas demostrar su Cutebot siguiendo el movimiento. Cierra la sesión conectando el logro práctico con el concepto de robótica e IA.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <h4>Diapositiva 8: Círculo de Creación</h4>
-                                <p class="dialogue assistant">"¡Un aplauso gigante, han programado su primer robot! ¿Qué fue lo más emocionante? ¿Qué más les gustaría que hiciera nuestro Cutebot? ¿Girar? ¿Encender luces? ¡Todo eso es posible con un buen plan!"</p>
+                                <p class="dialogue assistant">"¡Un aplauso gigante, han programado su primer robot! Ahora, compartan: <strong>¿Cuál fue la 'gran idea' detrás de su robot (ej. 'mi robot iba a ser un explorador de Marte, ¡y ya dio su primer paso!')?</strong>"</p>
+                                <p class="dialogue assistant">"Recuerden: la programación que hicimos es el 'plan' que la IA necesita para mover robots más complejos. ¡Son unos excelentes directores de movimiento! En las próximas clases, le enseñaremos a nuestro Cutebot ¡a usar su 'inteligencia artificial' para ver y decidir!"</p>
                             </div>
                         </div>
                     </div>
