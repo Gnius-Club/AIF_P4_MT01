@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-P4-TM05</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-P4-TM1</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 5 - 4to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 1 - 4to de Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,240 +38,401 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está diseñada para involucrar a los estudiantes de forma kinestésica y lúdica.</p>
-                <p>⏱️ Los tiempos son estimados para mantener el ritmo de la misión. ¡Sé flexible!</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 5 - ¡Conociendo a Cutebot!</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje:</strong>
-                                    <p><strong>Objetivo general de la sesión:</strong> Que los estudiantes se familiaricen con el robot Cutebot, programen sus primeras acciones y entiendan la conexión entre robots e IA.</p>
-                                    <p>Al final de la sesión, los estudiantes podrán:</p>
-                                    <ul>
-                                        <li>Identificar las partes principales del robot <strong>Cutebot</strong>.</li>
-                                        <li>Programar movimientos básicos como avanzar y detenerse.</li>
-                                        <li>Introducirse al concepto de cómo la <strong>IA</strong> se relaciona con la robótica.</li>
-                                        <li>Foco en <strong>Ciudadanía Digital y Ética</strong>.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                     <ul>
-                                        <li>⚡ <strong>Actividad 1:</strong> Saludo de I.A. con todos (3 min)</li>
-                                        <li>⚡ <strong>Actividad 2:</strong> I Can Statement + Ejemplificación (7 min)</li>
-                                        <li>⚡ <strong>Actividad 3:</strong> AI GYM (10 min)</li>
-                                        <li>⚡ <strong>Actividad 4:</strong> Brain Spark (20 min)</li>
-                                        <li>⚡ <strong>Actividad 5:</strong> Gnius STORM (Think-Pair-Share) (5 min)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un programa en MakeCode que hace que el robot Cutebot avance y se detenga, basado en el plan (GCS) generado con la IA.</li>
-                                        <li>Participación en la discusión sobre aplicaciones de la robótica móvil.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Presentación de la sesión (10 Diapositivas).</li>
-                                        <li>Computadoras con acceso a MakeCode</li>
-                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
-                                        <li>Kits de Robot Cutebot (1 por pareja) con Micro:bits y baterías</li>
-                                        <li>Pizarra y marcadores (Opcional).</li>
-                                    </ul>
-                                    <strong>Preparación Previa:</strong>
-                                    <ol>
-                                        <li>Asegurar que los kits de Cutebot estén completos y las baterías cargadas.</li>
-                                        <li>Verificar el acceso a MakeCode y que la extensión para Cutebot esté identificada.</li>
-                                        <li>Tener un Cutebot de ejemplo ya ensamblado con un movimiento simple cargado para la demostración.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> Usar el Micro:Bit y el Cutebot para programar movimientos básicos (avanzar y detenerse) y comprender la importancia de la seguridad en la interacción humano-robot y el rol del programador.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame las reglas más importantes para usar robots en el salón (qué sí puedo hacer, qué debo evitar y por qué). Luego ayúdame a conocer al Cutebot como si fuera mi nuevo compañero de equipo: dime qué partes tiene, para qué sirve cada una y cómo se conecta todo para que se pueda mover. Después quiero que me guíes paso a paso para programar sus primeros movimientos básicos: que avance y que se detenga. Quiero entender cómo mi código se convierte en acciones reales del robot y qué pasa si me equivoco.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Seguridad Robótica: Reglas simples para cuidar a las personas y a los robots mientras trabajamos juntos para evitar accidentes.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar el robot Cutebot para realizar movimientos sencillos como avanzar y frenar.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes velocidades y tiempos de espera para entender limitaciones.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Micro:Bit + Cutebot (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/) con extensión Cutebot instalada</label>
+                        <label><input type="checkbox"> Espacio despejado en el piso o mesas grandes para pruebas</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'Cutebot' → Agregar</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular con cuidado, no golpear, mantener en superficie plana, verificar batería y no forzar las ruedas.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre seguridad robótica y las partes del Cutebot (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si el robot no responde:</strong> Verificar que la batería esté cargada y bien conectada. Revisar que el micro:bit esté correctamente insertado.</li>
+                            <li><strong>Si el robot no se mueve correctamente:</strong> Confirmar que la extensión correspondiente esté instalada en MakeCode. Verificar que las ruedas no estén bloqueadas.</li>
+                            <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
-                <p>Genera expectación y prepara el ambiente, introduciendo el robot físico.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: El Gancho Inicial y Activación de Xolo ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 2). Genera expectación al presentar el robot físico e instruye claramente a los alumnos para activar a Xolo con sus gustos/intereses.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"¡Hola, inventores! Hasta ahora hemos hecho magia en la pantalla, pero hoy... ¡vamos a darle vida a un <strong>robot</strong> de verdad! (Muestra el <strong>Cutebot</strong>). Hoy vamos a conocer una herramienta increíble que nos abrirá las puertas a un mundo de robots que se mueven. ¡Prepárense para conocer al <strong>Cutebot</strong>!"</p>
-                                <p class="dialogue assistant"><strong>"Antes de empezar, vamos a activar a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses."</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos vida y movimiento a sus Cutebots!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Robótica Básica y Seguridad.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A controlar los movimientos del Cutebot para que avance y se detenga con seguridad.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros en fábricas de autos usan robots que deben moverse con precisión y seguridad para no chocar con las personas.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
-                <p>Familiariza a los estudiantes con las partes del robot y el rol del Micro:bit como su cerebro, presentando el objetivo.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Conociendo el Hardware del Cutebot ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 3). Presenta físicamente el Cutebot, señalando y nombrando los componentes principales (ruedas, motores, Micro:bit como "cerebro", LEDs, sensores). Refuerza el nombre 'Cutebot'.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Este es el <strong>Cutebot</strong>, nuestro nuevo compañero robótico. Fíjense bien en sus partes... aquí están sus <strong>ruedas</strong> y <strong>motores</strong>; aquí va el <strong>Micro:bit</strong>, que es su <strong>'cerebro'</strong>; fíjense en sus <strong>'ojos' (sensor ultrasónico)</strong> y los <strong>sensores de línea</strong>."</p>
-                                <p class="dialogue assistant">"El <strong>Micro:bit</strong> es el <strong>cerebro</strong>. Sin él, es solo plástico y cables. ¡Hoy le daremos su primera orden!"</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Demostración y "I Can Statement" ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 4). Muestra una breve demostración de un movimiento simple del Cutebot (avanzar y detenerse). Presenta formalmente el objetivo de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo las partes del Cutebot (motores y sensores) trabajan juntas para moverse.</li>
+                            <li>Introduce el concepto de seguridad y el rol del programador como jefe del robot.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar el Cutebot para avanzar y detenerse.</li>
+                            <li>Aprender sobre las reglas de seguridad y cómo cuidar a su nuevo compañero robot.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"(Muestra la demostración breve). Ya vieron que puede moverse. Hoy vamos a explorar para qué sirven robots como este en el mundo real, y cómo programar su primer movimiento."</p>
-                                <p class="dialogue assistant">"Al final de esta clase, podrán decir con confianza: '<strong>Yo puedo imaginar cómo un robot como el Cutebot podría ayudar en una tarea y hacer que se mueva un poquito con tu plan (GCS).</strong>'"</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar el Cutebot para moverse y entender la seguridad robótica.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Hola a todos! Hoy vamos a conocer a un nuevo integrante del equipo: ¡el Cutebot! Pero antes de que empiece a correr por el salón, necesitamos saber cómo tratarlo con respeto y seguridad. Abran su chat con XOLO y simplemente salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará las reglas de seguridad, les presentará las partes de su robot y los guiará para que haga sus primeros movimientos. ¡Pregúntenle todo lo que quieran!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 10 minutos</h2>
-                <p>Trabajo con el chatbot de I.A. para explorar aplicaciones de la robótica móvil, conocer los comandos de movimiento básicos y la conexión con la IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Instrucción Inicial y Prompt ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da la instrucción precisa a los alumnos para pedir la información a Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"¡Genios, es momento de entrar al <strong>A.I. GYM</strong>! 🧠💪 <strong>Xolo</strong> nos va a ayudar a entender las partes del <strong>Cutebot</strong>, sus primeros <strong>comandos</strong> y por qué los robots necesitan ser 'inteligentes'."</p>
-                                <p class="dialogue assistant">"Escriban en el chat: <strong>"Mi perfil es [escribe aquí tu perfil] y quiero que me introduzcas al mundo de los robots y la IA. Para empezar, enséñame qué es el robot Cutebot, sus partes, y cómo usar los bloques "cutebot_avanzar" y "detener" dándo un enfoque de Foco en Ciudadanía Digital y Ética."</strong>"</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Interacción Guiada (Aplicaciones y Comandos) ⏰ 9 minutos</h3>
-                            <p>(Proyectar Diapositivas 6 y 7). Monitorea mientras Xolo discute aplicaciones de la robótica móvil (industria, exploración, salud) y explica que la IA es lo que permite a los robots "ver" y tomar decisiones.</p>
-                            <p>Refuerza la idea de que la IA ayuda a los robots a tomar decisiones (ej. no chocar).</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los Cutebots conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique movimientos básicos de entrada en escena.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar el Cutebot en una entrada triunfal.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Conectar el Micro:bit al Cutebot y probar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Xolo, quiero inventar un mini proyecto donde el Cutebot se mueva como si estuviera entrando en escena por primera vez. Ayúdame a imaginar un VIBE claro (qué tipo de robot es, qué hace y por qué es útil o divertido). Luego ayúdame a convertir esa idea en un GCS sencillo, usando solo acciones básicas: avanzar, detener y esperar. Finalmente, hazme una pregunta para mejorar mi idea y hacerla más creativa, como si fuera una misión real."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! <strong>Xolo</strong> les está explicando dónde se usan robots como este: ¡en <strong>fábricas</strong>, para <strong>explorar Marte</strong> o para hacer <strong>entregas</strong>! También les está enseñando los comandos para que avance (<strong>`cutebot_avanzar`</strong>) y se detenga (<strong>`cutebot_detener`</strong>).</p>
-                                <p class="dialogue assistant">Asegúrense de responder a Xolo cuando pregunte: <strong>"Si tuvieran un Cutebot súper poderoso, ¿en qué tarea les gustaría que les ayudara en la escuela o en casa?"</strong></p>
-                                <p class="dialogue assistant">Recuerden que la <strong>IA</strong> es el 'secreto' que hace que estos robots puedan 'ver' su entorno, como nuestro <strong>Cutebot</strong> con su lente especial.</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El Cutebot avanzó y se detuvo exactamente cuando querías?</li>
+                            <li>¿Qué pasa si el robot se encuentra con un obstáculo mientras avanza?</li>
+                            <li>¿Funciona igual el movimiento si el robot está en el piso que si está sobre una mesa lisa?</li>
+                            <li>¿Cómo ayuda seguir las reglas de seguridad a que tu robot dure más tiempo funcionando?</li>
+                            <li>Si el robot solo hace lo que tú escribiste en el código, ¿quién es el responsable si el robot comete un error?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Ahora que ya saben cómo se mueve el Cutebot, vamos a darle una personalidad. Imaginen que su robot es un actor entrando al escenario por primera vez. ¿Es un robot valiente, uno tímido o uno muy veloz? Pídanle a XOLO que los ayude a definir ese 'VIBE' y a crear el código (GCS) para su entrada triunfal. Por ejemplo, podría avanzar un poco, esperar como si saludara, y luego seguir. Una vez que tengan su idea, pásenla a bloques en MakeCode. Si algo no sale a la primera, no se preocupen, pregúntenle a XOLO para depurar. ¡Recuerden tratar a su robot con mucho cuidado al probarlo!</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con los movimientos básicos. ¿Puedes enseñarme cómo hacer que mi Cutebot haga un giro pequeño antes de detenerse?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
-                <p>Ideación de una tarea simple, traducción a tu plan (GCS) con el chatbot, implementación y prueba del primer movimiento.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Ideación de la Misión (La "idea") ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 8). Anima a los alumnos a idear un rol simple para su Cutebot. Guíalos a que la acción se simplifique a un movimiento de avanzar y detenerse.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Es hora de diseñar la primera misión para su <strong>Cutebot</strong>! Basado en lo que vieron, ¿qué quieren que simule ser? ¿Un <strong>robot de exploración</strong> que busca algo? ¿Un <strong>robot de reparto</strong>? Pídanle ayuda a Xolo: <strong>'Basado en que quiero que mi Cutebot sea un [robot de exploración], ayúdame a crear un plan de movimiento simple (avanzar y detener).'</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Planificación con IA (GCS Básico) ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 9). Guía a los alumnos sobre cómo usar Xolo para generar 'tu plan' (GCS). Refuerza la necesidad de la secuencia: avanzar, esperar, detener.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Xolo</strong> les dará <strong>'tu plan'</strong> para lograr ese primer movimiento simple. ¡Fíjense bien en el plan! Debe contener el <strong>bloque de avanzar</strong>, un <strong>tiempo de espera</strong> (para que se mueva) y el <strong>bloque de detener</strong>. Su plan se verá parecido a esto:</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">
-AL INICIO:
-    // El Cutebot se prepara
-    
-POR SIEMPRE: 
-    // 1. El Cutebot avanza
-    cutebot_avanzar(40) // Velocidad
-    ESPERAR 3 segundos
-    
-    // 2. El Cutebot se detiene
-    cutebot_detener()
-    ESPERAR 2 segundos // Pausa antes de repetir
-                                </pre>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación y Prueba del Movimiento ⏰ 10 minutos</h3>
-                            <p>Da tiempo a los alumnos para que traduzcan el GCS a bloques en MakeCode, lo descarguen al Micro:bit, ensamblen y prueben el primer movimiento en el Cutebot.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué movimientos realizó bien su Cutebot.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué movimientos realizó mejor tu Cutebot? ¿Qué te sorprendió de cómo obedece tus órdenes?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Manos a la obra, ingenieros! Tomen <strong>'tu plan'</strong> de <strong>Xolo</strong> y constrúyanlo en <strong>MakeCode</strong>. Conecten el <strong>Cutebot</strong>, descarguen el programa. Pónganlo en el suelo para ver cómo obedece su primer comando. Si tienen un problema (ej. no avanza), revisen los pasos de <strong>'tu plan'</strong> y pidan ayuda a <strong>Xolo</strong> si es necesario.</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi Cutebot avanzó y se detuvo con mucha precisión. Me sorprendió que el tiempo de espera cambia mucho cómo se ve su personalidad."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM (Think-Pair-Share) ⏰ 5 minutos</h2>
-                <p>Los alumnos muestran sus primeros movimientos y reflexionan sobre la conexión entre su "gran idea" y la acción básica lograda.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Celebración y Reflexión (Think & Share) ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 10). Felicita a los estudiantes. Pide a algunas parejas demostrar su Cutebot siguiendo el movimiento. Cierra la sesión conectando el logro práctico con el concepto de robótica e IA.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"¡Un aplauso gigante, han programado su primer <strong>robot</strong>! Ahora, compartan: <strong>¿Cuál fue la 'gran idea' detrás de su robot (ej. 'mi robot iba a ser un explorador de Marte, ¡y ya dio su primer paso!')?</strong>"</p>
-                                <p class="dialogue assistant">"Recuerden: la <strong>programación</strong> que hicimos es el <strong>'plan'</strong> que la <strong>IA</strong> necesita para mover robots más complejos. ¡Son unos excelentes directores de movimiento! En las próximas clases, le enseñaremos a nuestro <strong>Cutebot</strong> ¡a usar su <strong>'inteligencia artificial'</strong> para ver y decidir!"</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
@@ -281,4 +440,4 @@ POR SIEMPRE:
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
